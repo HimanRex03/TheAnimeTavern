@@ -3,29 +3,118 @@
   padding: 0;
   box-sizing: border-box;
 }
-#main {
-  font-family: "Tangerine", cursive;
-  font-size: 10rem;
-}
-div {
+/* PANEL DEFAULT FEATURES */
+.bgpanel {
   min-height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-size: 60px;
+}
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  z-index: 999;
+  /* box-shadow: 2px 6px 7px 4px rgba(0, 0, 0, 0.67); */
+}
+
+.navbar-home {
+  position: relative;
+}
+/* NAVBAR BUTTONS GENERAL PROPERTIES */
+.navbuttons {
+  position: absolute;
+  color: rgb(218, 218, 218);
+  text-decoration: none;
+  font-size: 3vw;
+  font-family: "Tangerine", cursive;
+}
+
+/* NAVBAR HOME BUTTON */
+#homebutton {
+  top: 3.5vh;
+  left: 8vw;
+}
+/* NAVBAR SEASONS BUTTON */
+#seasonsbutton {
+  top: 3.5vh;
+  left: 20vw;
+}
+/* NAVBAR SCHEDULE BUTTON */
+#schedulebutton {
+  top: 3.5vh;
+  left: 32vw;
+}
+/* NAVBAR SEARCH BAR */
+input.searchbar {
+  position: absolute;
+  top: 3.7vh;
+  left: 48vw;
+  height: 6vh;
+  width: 20vw;
+  font-size: 1.5vw;
+  font-family: "Roboto", cursive;
+
+  border: none;
+  border-radius: 25px;
+  background: rgb(59, 59, 59, 0.6);
   color: rgb(218, 218, 218);
 }
-.banner {
+/* PLACEHOLDER PROPERTIES */
+input::placeholder {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  font-family: "Tangerine", cursive;
+  font-size: 2.2vw;
+  color: rgb(194, 194, 194);
+}
+/* LOG IN BUTTONS */
+
+/* NAVBAR BUTTONS HOVER */
+#homebutton:hover,
+#seasonsbutton:hover,
+#schedulebutton:hover {
+  color: white;
+  text-shadow: -1px -1px 14px rgba(255, 255, 255, 1);
+}
+/* THE ANIME TAVERN TEXT */
+#main {
+  position: relative;
+  font-family: "Tangerine", cursive;
+  font-size: 10vw;
+  left: -15%;
+  margin: 4rem;
+  color: rgb(218, 218, 218);
+}
+/* WELCOME TEXT */
+#initial {
+  position: absolute;
+  color: rgb(218, 218, 218);
+  font-size: 2.5vw;
+  font-family: "Roboto", sans-serif;
+  top: 60vh;
+  left: 7.5vw;
+}
+
+/* MAIN PANEL HOLDING MAIN TEXT */
+#firstpanel {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./images/Tavern1.jpg");
+    url("./images/Tavern2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
 }
-.header {
+/* SECOND PANEL */
+#secondpanel {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./images/Ahmed.jpg");
+    url("./images/steinsgate1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
